@@ -2,36 +2,92 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Центр підготовки сержантського складу НГУ | Стати інструктором</title>
     <meta
       name="description"
-      content="Центр підготовки сержантського складу НГУ запрошує досвідчених військовослужбовців стати інструкторами."
+      content="Центр підготовки сержантського складу НГУ формує команду інструкторів. Передай свій практичний, командний та бойовий досвід наступному поколінню сержантів."
     />
-    <meta name="theme-color" content="#071119" />
-    <title>Стань інструктором | Центр підготовки сержантського складу НГУ</title>
+    <meta name="theme-color" content="#081522" />
+    <link rel="canonical" href="https://sergeant.army/" />
+
+    <!-- Open Graph / Telegram / Signal / Viber / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:site_name" content="Центр підготовки сержантського складу НГУ" />
+    <meta property="og:url" content="https://sergeant.army/" />
+    <meta property="og:title" content="Центр підготовки сержантського складу НГУ | Стати інструктором" />
+    <meta
+      property="og:description"
+      content="Центр підготовки сержантського складу НГУ формує команду інструкторів. Передай свій практичний, командний та бойовий досвід наступному поколінню сержантів."
+    />
+    <meta property="og:image" content="https://sergeant.army/assets/og-image.jpg" />
+    <meta property="og:image:secure_url" content="https://sergeant.army/assets/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Твій досвід має стати досвідом інших. Центр підготовки сержантського складу НГУ" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Центр підготовки сержантського складу НГУ | Стати інструктором" />
+    <meta
+      name="twitter:description"
+      content="Центр підготовки сержантського складу НГУ формує команду інструкторів. Передай свій практичний, командний та бойовий досвід наступному поколінню сержантів."
+    />
+    <meta name="twitter:image" content="https://sergeant.army/assets/og-image.jpg" />
+
     <link rel="icon" type="image/svg+xml" href="assets/center-emblem.svg" />
+    <link rel="preload" href="assets/fonts/e-UkraineHead-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/e-Ukraine-Regular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Центр підготовки сержантського складу Національної гвардії України",
+        "alternateName": "ЦПСС НГУ",
+        "url": "https://sergeant.army/",
+        "logo": "https://sergeant.army/assets/center-emblem.svg",
+        "email": "ncotc.ngu@gmail.com",
+        "telephone": "+380950082408",
+        "slogan": "Знання. Характер. Лідерство."
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">До основного вмісту</a>
 
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="На початок сторінки">
-        <img
-          class="brand__emblem"
-          src="assets/center-emblem.svg"
-          alt=""
-          width="190"
-          height="326"
-          aria-hidden="true"
-        />
+      <a class="brand" href="#top" aria-label="Центр підготовки сержантського складу НГУ — на початок сторінки">
+        <img class="brand__emblem" src="assets/center-emblem.svg" alt="" width="190" height="326" aria-hidden="true" />
         <span class="brand__name">
-          Центр підготовки<br />
-          сержантського складу
+          Центр підготовки<br />сержантського складу
           <small>Національної гвардії України</small>
         </span>
       </a>
+
+      <nav class="site-nav" id="site-menu" aria-label="Основна навігація" data-menu>
+        <a href="#about">Про Центр</a>
+        <a href="#who">Кого шукаємо</a>
+        <a href="#vacancies">Вакансії</a>
+        <a href="#contacts">Контакти</a>
+        <a
+          class="site-nav__cta"
+          href="https://forms.gle/u6K18rWaoMVQsnip7"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cta="menu"
+        >Стати інструктором</a>
+      </nav>
+
+      <a
+        class="button button--primary button--compact header-cta"
+        href="https://forms.gle/u6K18rWaoMVQsnip7"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-cta="header"
+      >Стати інструктором</a>
 
       <button
         class="menu-toggle"
@@ -43,139 +99,307 @@
       >
         <span></span><span></span>
       </button>
-
-      <nav class="site-nav" id="site-menu" aria-label="Основна навігація" data-menu>
-        <a href="#mission">Про центр</a>
-        <a href="#requirements">Кого шукаємо</a>
-        <a class="site-nav__cta" href="#apply">Стати інструктором</a>
-      </nav>
     </header>
 
     <main id="main">
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero__image" role="img" aria-label="Військовий інструктор проводить заняття біля тактичної мапи"></div>
-        <div class="hero__veil"></div>
-        <div class="grain" aria-hidden="true"></div>
+      <!-- HERO -->
+      <section class="hero" id="top" aria-labelledby="hero-title" data-hero>
+        <picture class="hero__media">
+          <source
+            type="image/webp"
+            srcset="assets/hero-instructor-sm.webp 720w, assets/hero-instructor-md.webp 1100w, assets/hero-instructor.webp 1672w"
+            sizes="100vw"
+          />
+          <img
+            src="assets/hero-instructor.webp"
+            alt="Інструктор Центру проводить заняття з групою військовослужбовців біля тактичної мапи"
+            width="1672"
+            height="941"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </picture>
+        <div class="hero__veil" aria-hidden="true"></div>
 
-        <div class="hero__content wrap">
-          <p class="eyebrow reveal"><span></span> Знання · характер · лідерство</p>
-          <h1 id="hero-title" class="reveal reveal--delay-1">
+        <div class="wrap hero__content">
+          <p class="eyebrow reveal"><span></span>Знання. Характер. Лідерство.</p>
+          <h1 id="hero-title" class="reveal reveal--d1">
             Твій досвід<br />
-            <span>має стати</span><br />
-            досвідом інших
+            <em>має стати</em><br />
+            досвідом інших.
           </h1>
-          <p class="hero__lead reveal reveal--delay-2">
-            Центр підготовки сержантського складу НГУ формує команду інструкторів, які готові передавати практичний, командний і бойовий досвід наступному поколінню сержантів.
-          </p>
-          <div class="hero__actions reveal reveal--delay-3">
-            <a
-              class="button button--primary"
-              href="https://forms.gle/u6K18rWaoMVQsnip7"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Заповнити анкету
-              <span aria-hidden="true">↗</span>
-            </a>
-            <a class="button button--ghost" href="#requirements">Кого ми шукаємо</a>
+          <div class="hero__lead reveal reveal--d2">
+            <p>Центр підготовки сержантського складу НГУ формує команду інструкторів.</p>
+            <p>Твій практичний, командний і бойовий досвід може стати основою підготовки інших.</p>
           </div>
-        </div>
-
-        <div class="hero__rail" aria-hidden="true">
-          <span>Люди</span><i></i><span>Стандарти</span><i></i><span>Розвиток</span>
-        </div>
-
-        <a class="scroll-cue" href="#mission" aria-label="Прокрутити до наступного розділу">
-          <span>Далі</span><i></i>
-        </a>
-      </section>
-
-      <section class="mission section" id="mission" aria-labelledby="mission-title">
-        <div class="wrap mission__grid">
-          <div class="section-index" aria-hidden="true">01 / Місія</div>
-          <div class="mission__statement reveal">
-            <p class="eyebrow eyebrow--dark"><span></span> Формуй тих, хто веде за собою</p>
-            <h2 id="mission-title">Досвід набуває сили, коли ним діляться.</h2>
-          </div>
-          <div class="mission__copy reveal reveal--delay-1">
-            <p>
-              Інструктор Центру — це не просто викладач. Це військовослужбовець, який перетворює власний досвід на знання, рішення та впевненість інших.
-            </p>
-            <p>
-              Тут твоя практика стає стандартом підготовки, а твій характер — прикладом для майбутніх командирів.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="requirements section" id="requirements" aria-labelledby="requirements-title">
-        <div class="wrap">
-          <div class="section-heading">
-            <div>
-              <div class="section-index section-index--light" aria-hidden="true">02 / Кого шукаємо</div>
-              <h2 id="requirements-title" class="reveal">Три речі, з яких починається інструктор.</h2>
-            </div>
-            <p class="reveal reveal--delay-1">
-              Якщо впізнаєш себе — зроби наступний крок.
-            </p>
-          </div>
-
-          <div class="criteria-grid">
-            <article class="criterion reveal">
-              <span class="criterion__number">01</span>
-              <div class="criterion__line"></div>
-              <h3>Маєш досвід.</h3>
-              <p>Практичний, командний або бойовий досвід, що має цінність для інших.</p>
-            </article>
-            <article class="criterion reveal reveal--delay-1">
-              <span class="criterion__number">02</span>
-              <div class="criterion__line"></div>
-              <h3>Вмієш навчати.</h3>
-              <p>Можеш пояснювати складне, працювати з людьми та вести до результату.</p>
-            </article>
-            <article class="criterion reveal reveal--delay-2">
-              <span class="criterion__number">03</span>
-              <div class="criterion__line"></div>
-              <h3>Готовий формувати сержантів.</h3>
-              <p>Хочеш впливати на якість підготовки та посилювати військо через знання.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="apply section" id="apply" aria-labelledby="apply-title">
-        <div class="apply__accent" aria-hidden="true"></div>
-        <div class="wrap apply__grid">
-          <div class="apply__copy reveal">
-            <p class="eyebrow"><span></span> Наступний крок</p>
-            <h2 id="apply-title">Стань інструктором Центру.</h2>
-            <p>
-              Відскануй QR-код або відкрий коротку анкету. Розкажи про свій досвід — ми зв’яжемося з тобою щодо наступних кроків.
-            </p>
+          <div class="hero__actions reveal reveal--d3">
             <a
               class="button button--primary button--large"
               href="https://forms.gle/u6K18rWaoMVQsnip7"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              Подати заявку
-              <span aria-hidden="true">↗</span>
-            </a>
-            <small>Google Forms відкриється у новій вкладці</small>
+              data-cta="hero"
+            >Стати інструктором <span aria-hidden="true">→</span></a>
+            <a class="link-arrow" href="#mission">Дізнатися про Центр <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 01 МІСІЯ -->
+      <section class="section section--light mission" id="mission" aria-labelledby="mission-title">
+        <div class="wrap">
+          <p class="marker">01 / Місія</p>
+          <div class="mission__grid">
+            <h2 id="mission-title" class="reveal">Досвід набуває сили,<br />коли ним діляться.</h2>
+            <div class="mission__copy reveal reveal--d1">
+              <p>
+                Центр створений для підготовки професійних сержантів, здатних ефективно виконувати завдання у військах, бути помічниками командирів та лідерами для підлеглого особового складу.
+              </p>
+              <p>
+                Інструктор Центру перетворює власний практичний, командний та бойовий досвід на знання, рішення та впевненість інших.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 ЗНАННЯ. ХАРАКТЕР. ЛІДЕРСТВО. -->
+      <section class="section section--dark values" id="values" aria-labelledby="values-title">
+        <div class="wrap">
+          <p class="marker marker--light">02 / Наші орієнтири</p>
+          <h2 id="values-title" class="values__title reveal">
+            <span>Знання.</span> <span>Характер.</span> <span>Лідерство.</span>
+          </h2>
+          <div class="values__grid">
+            <article class="value reveal">
+              <span class="value__idx" aria-hidden="true">I</span>
+              <h3>Знання</h3>
+              <p>Систематизуємо практичний досвід і перетворюємо його на професійну підготовку сержантів.</p>
+            </article>
+            <article class="value reveal reveal--d1">
+              <span class="value__idx" aria-hidden="true">II</span>
+              <h3>Характер</h3>
+              <p>Формуємо відповідальність за людей, рішення та дотримання стандартів.</p>
+            </article>
+            <article class="value reveal reveal--d2">
+              <span class="value__idx" aria-hidden="true">III</span>
+              <h3>Лідерство</h3>
+              <p>Готуємо сержантів, здатних вести людей, формувати команду та бути опорою командира.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 КОГО МИ ШУКАЄМО -->
+      <section class="section section--light who" id="who" aria-labelledby="who-title">
+        <div class="wrap">
+          <p class="marker">03 / Кого ми шукаємо</p>
+          <h2 id="who-title" class="reveal">Твоє місце може бути тут.</h2>
+
+          <div class="criteria">
+            <article class="criterion reveal">
+              <span class="criterion__num" aria-hidden="true">01</span>
+              <h3>Маєш досвід.</h3>
+              <p>Практичний, командний, інструкторський або бойовий.</p>
+            </article>
+            <article class="criterion reveal reveal--d1">
+              <span class="criterion__num" aria-hidden="true">02</span>
+              <h3>Вмієш навчати.</h3>
+              <p>Можеш не просто виконати завдання, а пояснити, показати та сформувати навичку в іншого.</p>
+            </article>
+            <article class="criterion reveal reveal--d2">
+              <span class="criterion__num" aria-hidden="true">03</span>
+              <h3>Готовий формувати сержантів.</h3>
+              <p>Готовий передавати досвід і відповідати за якість підготовки наступних сержантів.</p>
+            </article>
+          </div>
+
+          <p class="who__note reveal">
+            Ми шукаємо не просто викладачів. <strong>Ми шукаємо сержантів, досвід яких варто передавати іншим.</strong>
+          </p>
+        </div>
+      </section>
+
+      <!-- 04 ПРО ЦЕНТР -->
+      <section class="section section--dark about" id="about" aria-labelledby="about-title">
+        <div class="wrap">
+          <p class="marker marker--light">04 / Про Центр</p>
+          <div class="about__grid">
+            <h2 id="about-title" class="reveal">Перший центр<br />такого формату в НГУ.</h2>
+            <div class="about__copy reveal reveal--d1">
+              <p>Центр підготовки сержантського складу створено на базі Навчального центру Національної гвардії України.</p>
+              <p>Посади командування, адміністрації та інструкторсько-викладацького складу Центру комплектуються виключно військовослужбовцями сержантського складу.</p>
+              <p>Центр здійснюватиме підготовку професійних сержантів за трьома основними напрямами.</p>
+            </div>
+          </div>
+
+          <div class="directions">
+            <article class="direction reveal">
+              <span class="direction__idx" aria-hidden="true">01</span>
+              <h3>Командний</h3>
+              <p>Підготовка сержантів до виконання завдань на командних посадах та роботи з підлеглим особовим складом.</p>
+            </article>
+            <article class="direction reveal reveal--d1">
+              <span class="direction__idx" aria-hidden="true">02</span>
+              <h3>Інструкторський</h3>
+              <p>Підготовка військових інструкторів, здатних професійно передавати знання, формувати навички та підтримувати стандарти підготовки.</p>
+            </article>
+            <article class="direction reveal reveal--d2">
+              <span class="direction__idx" aria-hidden="true">03</span>
+              <h3>Штабний</h3>
+              <p>Підготовка сержантів до виконання завдань на штабних посадах та роботи в органах військового управління.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 ВАКАНСІЇ -->
+      <section class="section section--light vacancies" id="vacancies" aria-labelledby="vacancies-title">
+        <div class="wrap">
+          <p class="marker">05 / Вакансії</p>
+          <div class="section-head">
+            <h2 id="vacancies-title" class="reveal">Знайди своє місце<br />в команді Центру.</h2>
+            <p class="section-head__lead reveal reveal--d1">
+              Центр формує професійну команду. Обери посаду, на якій твій досвід може стати досвідом інших.
+            </p>
+          </div>
+
+          <ul class="vacancy-grid" role="list">
+            <li class="vacancy reveal">
+              <h3 class="vacancy__title">Сержант-інструктор</h3>
+              <dl class="vacancy__meta">
+                <div><dt>Штатне звання</dt><dd>Головний сержант</dd></div>
+                <div><dt>Тарифний розряд</dt><dd>12</dd></div>
+              </dl>
+              <a class="vacancy__link" href="https://forms.gle/u6K18rWaoMVQsnip7" target="_blank" rel="noopener noreferrer" data-cta="vacancy" data-cta-label="Сержант-інструктор">Подати кандидатуру <span aria-hidden="true">→</span></a>
+            </li>
+            <li class="vacancy reveal reveal--d1">
+              <h3 class="vacancy__title">Командир навчальної групи — старший інструктор</h3>
+              <dl class="vacancy__meta">
+                <div><dt>Штатне звання</dt><dd>Штаб-сержант</dd></div>
+                <div><dt>Тарифний розряд</dt><dd>12</dd></div>
+              </dl>
+              <a class="vacancy__link" href="https://forms.gle/u6K18rWaoMVQsnip7" target="_blank" rel="noopener noreferrer" data-cta="vacancy" data-cta-label="Командир навчальної групи">Подати кандидатуру <span aria-hidden="true">→</span></a>
+            </li>
+            <li class="vacancy reveal reveal--d2">
+              <h3 class="vacancy__title">Начальник курсу</h3>
+              <dl class="vacancy__meta">
+                <div><dt>Штатне звання</dt><dd>Штаб-сержант</dd></div>
+                <div><dt>Тарифний розряд</dt><dd>18</dd></div>
+              </dl>
+              <a class="vacancy__link" href="https://forms.gle/u6K18rWaoMVQsnip7" target="_blank" rel="noopener noreferrer" data-cta="vacancy" data-cta-label="Начальник курсу">Подати кандидатуру <span aria-hidden="true">→</span></a>
+            </li>
+            <li class="vacancy reveal">
+              <h3 class="vacancy__title">Штаб-сержант 3 категорії</h3>
+              <dl class="vacancy__meta">
+                <div><dt>Штатне звання</dt><dd>Старший сержант</dd></div>
+                <div><dt>Тарифний розряд</dt><dd>12</dd></div>
+              </dl>
+              <a class="vacancy__link" href="https://forms.gle/u6K18rWaoMVQsnip7" target="_blank" rel="noopener noreferrer" data-cta="vacancy" data-cta-label="Штаб-сержант 3 категорії">Подати кандидатуру <span aria-hidden="true">→</span></a>
+            </li>
+            <li class="vacancy reveal reveal--d1">
+              <h3 class="vacancy__title">Сержант з матеріального забезпечення</h3>
+              <dl class="vacancy__meta">
+                <div><dt>Штатне звання</dt><dd>Старший сержант</dd></div>
+                <div><dt>Тарифний розряд</dt><dd>10</dd></div>
+              </dl>
+              <a class="vacancy__link" href="https://forms.gle/u6K18rWaoMVQsnip7" target="_blank" rel="noopener noreferrer" data-cta="vacancy" data-cta-label="Сержант з МЗ">Подати кандидатуру <span aria-hidden="true">→</span></a>
+            </li>
+            <li class="vacancy reveal reveal--d2">
+              <h3 class="vacancy__title">Фельдшер</h3>
+              <dl class="vacancy__meta">
+                <div><dt>Штатне звання</dt><dd>Старший сержант</dd></div>
+                <div><dt>Тарифний розряд</dt><dd>8</dd></div>
+              </dl>
+              <a class="vacancy__link" href="https://forms.gle/u6K18rWaoMVQsnip7" target="_blank" rel="noopener noreferrer" data-cta="vacancy" data-cta-label="Фельдшер">Подати кандидатуру <span aria-hidden="true">→</span></a>
+            </li>
+          </ul>
+
+          <!-- ГРОШОВЕ ЗАБЕЗПЕЧЕННЯ -->
+          <aside class="pay reveal" aria-labelledby="pay-title">
+            <div class="pay__head">
+              <p class="pay__label" id="pay-title">Додаткові виплати</p>
+              <p class="pay__sum">до 30 000 ₴ <span>/ місяць*</span></p>
+            </div>
+            <div class="pay__copy">
+              <p>Для відповідних посад Центру передбачені додаткові виплати — до 30 000 грн на місяць відповідно до встановлених умов та чинних нормативно-правових актів.</p>
+              <p class="pay__note">* Конкретний розмір виплати залежить від посади, умов проходження служби та підстав для її нарахування.</p>
+            </div>
+          </aside>
+
+          <!-- НЕ ЗНАЙШОВ -->
+          <div class="not-found reveal">
+            <div class="not-found__copy">
+              <h3>Не знайшов своєї спеціальності?</h3>
+              <p>Якщо твій професійний, командний, інструкторський або бойовий досвід може бути корисним Центру — залиш анкету.</p>
+              <p>Ми розглянемо можливість його застосування в команді Центру.</p>
+            </div>
+            <a
+              class="button button--navy"
+              href="https://forms.gle/u6K18rWaoMVQsnip7"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-cta="not-found"
+            >Залишити анкету <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ФІНАЛЬНИЙ CTA -->
+      <section class="section section--dark apply" id="apply" aria-labelledby="apply-title" data-apply>
+        <div class="apply__accent" aria-hidden="true"></div>
+        <div class="wrap apply__grid">
+          <div class="apply__copy">
+            <p class="eyebrow reveal"><span></span>Твій наступний крок</p>
+            <h2 id="apply-title" class="reveal reveal--d1">Стань інструктором<br />Центру.</h2>
+            <p class="apply__text reveal reveal--d2">
+              Заповни коротку анкету.<br />
+              Ми зв’яжемося з тобою та обговоримо наступний крок.
+            </p>
+            <a
+              class="button button--primary button--large reveal reveal--d3"
+              href="https://forms.gle/u6K18rWaoMVQsnip7"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-cta="final"
+            >Заповнити анкету <span aria-hidden="true">→</span></a>
           </div>
 
           <a
-            class="qr-card reveal reveal--delay-1"
+            class="qr-card reveal reveal--d2"
             href="https://forms.gle/u6K18rWaoMVQsnip7"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Відкрити анкету за QR-кодом"
+            aria-label="Відкрити анкету кандидата"
+            data-cta="qr"
           >
-            <div class="qr-card__frame">
-              <img src="assets/application-qr.jpg" alt="QR-код для переходу до анкети інструктора" width="1125" height="1125" />
-            </div>
-            <span><i aria-hidden="true"></i> Скануй та долучайся</span>
+            <img src="assets/application-qr.jpg" alt="QR-код анкети кандидата" width="1125" height="1125" loading="lazy" decoding="async" />
+            <span>Скануй та доєднуйся</span>
           </a>
+        </div>
+      </section>
+
+      <!-- КОНТАКТИ -->
+      <section class="section section--light contacts" id="contacts" aria-labelledby="contacts-title">
+        <div class="wrap contacts__grid">
+          <div class="reveal">
+            <p class="marker">Контакти</p>
+            <h2 id="contacts-title">Центр підготовки<br />сержантського складу НГУ</h2>
+            <p class="contacts__lead">Якщо зручніше — зателефонуй або напиши нам напряму.</p>
+          </div>
+
+          <div class="contacts__cards">
+            <a class="contact-card reveal reveal--d1" href="tel:+380950082408" data-contact="phone">
+              <span class="contact-card__label">Телефон</span>
+              <span class="contact-card__value">095 008 24 08</span>
+              <span class="contact-card__action">Зателефонувати <i aria-hidden="true">→</i></span>
+            </a>
+            <a class="contact-card reveal reveal--d2" href="mailto:ncotc.ngu@gmail.com" data-contact="email">
+              <span class="contact-card__label">E-mail</span>
+              <span class="contact-card__value">ncotc.ngu@gmail.com</span>
+              <span class="contact-card__action">Написати <i aria-hidden="true">→</i></span>
+            </a>
+          </div>
         </div>
       </section>
     </main>
@@ -183,19 +407,32 @@
     <footer class="site-footer">
       <div class="wrap site-footer__inner">
         <div class="brand brand--footer">
-          <img
-            class="brand__emblem"
-            src="assets/center-emblem.svg"
-            alt=""
-            width="190"
-            height="326"
-            aria-hidden="true"
-          />
-          <span class="brand__name">Центр підготовки<br />сержантського складу НГУ</span>
+          <img class="brand__emblem" src="assets/center-emblem.svg" alt="" width="190" height="326" aria-hidden="true" loading="lazy" />
+          <span class="brand__name">Центр підготовки сержантського складу<br />Національної гвардії України</span>
         </div>
-        <p>Знання <i></i> Характер <i></i> Лідерство</p>
-        <small>© <span data-year></span> Усі права захищені</small>
+
+        <p class="site-footer__formula">Знання <i></i> Характер <i></i> Лідерство</p>
+
+        <div class="site-footer__contacts">
+          <a href="https://sergeant.army/">sergeant.army</a>
+          <a href="tel:+380950082408" data-contact="phone">095 008 24 08</a>
+          <a href="mailto:ncotc.ngu@gmail.com" data-contact="email">ncotc.ngu@gmail.com</a>
+        </div>
+
+        <small>© <span data-year></span> Центр підготовки сержантського складу НГУ</small>
       </div>
     </footer>
+
+    <!-- Плаваюча CTA для мобільних -->
+    <div class="mobile-cta" data-mobile-cta aria-hidden="true">
+      <a
+        class="button button--primary"
+        href="https://forms.gle/u6K18rWaoMVQsnip7"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-cta="sticky"
+        tabindex="-1"
+      >Стати інструктором <span aria-hidden="true">→</span></a>
+    </div>
   </body>
 </html>
