@@ -207,6 +207,7 @@ p {
   line-height: 1.2;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-wrap: balance;
 }
 
 .brand__name small {
@@ -262,6 +263,14 @@ p {
 
 .site-header .header-cta {
   display: none;
+}
+
+.header-cta__full {
+  display: none;
+}
+
+.header-cta__short {
+  display: inline;
 }
 
 .menu-toggle {
@@ -780,30 +789,6 @@ p {
   font-weight: 700;
 }
 
-.vacancy__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 20px;
-  padding-top: 4px;
-  color: var(--navy);
-  font-family: var(--head);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.vacancy__link span {
-  color: var(--gold);
-  transition: transform 200ms ease;
-}
-
-.vacancy__link:hover span {
-  transform: translateX(4px);
-}
-
 /* Виплати */
 
 .pay {
@@ -983,9 +968,10 @@ p {
 }
 
 .contact-card {
+  position: relative;
   display: grid;
   gap: 6px;
-  padding: 22px 22px 20px;
+  padding: 22px 60px 20px 22px;
   color: var(--ink);
   border: 1px solid var(--line-light);
   border-left: 4px solid var(--gold);
@@ -998,6 +984,15 @@ p {
 .contact-card:focus-visible {
   box-shadow: 0 14px 34px -20px rgba(8, 21, 34, 0.35);
   transform: translateY(-3px);
+}
+
+.contact-card__icon {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 24px;
+  height: 24px;
+  fill: var(--gold);
 }
 
 .contact-card__label {
@@ -1057,7 +1052,10 @@ p {
 
 .brand--footer .brand__name {
   font-size: 11px;
-  line-height: 1.35;
+}
+
+.brand--footer .brand__name small {
+  font-size: 9px;
 }
 
 .site-footer__formula {
@@ -1107,7 +1105,34 @@ p {
   border-color: var(--gold);
 }
 
-.site-footer small {
+.site-footer__social {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.site-footer__social a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line-dark);
+  transition: border-color 160ms ease, color 160ms ease;
+}
+
+.site-footer__social a:hover,
+.site-footer__social a:focus-visible {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.site-footer__social svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.site-footer__inner > small {
   color: rgba(244, 244, 242, 0.4);
   font-size: 12px;
 }
@@ -1293,7 +1318,7 @@ body.has-mobile-cta {
     align-items: start;
   }
 
-  .site-footer small {
+  .site-footer__inner > small {
     grid-column: 1 / -1;
     padding-top: 22px;
     border-top: 1px solid var(--line-dark);
@@ -1392,6 +1417,14 @@ body.has-mobile-cta {
     min-height: 46px;
     padding-inline: 22px;
     font-size: 13px;
+  }
+
+  .header-cta__full {
+    display: inline;
+  }
+
+  .header-cta__short {
+    display: none;
   }
 
   .menu-toggle,
@@ -1613,7 +1646,11 @@ body.has-mobile-cta {
     justify-self: end;
   }
 
-  .site-footer small {
+  .site-footer__social {
+    justify-self: end;
+  }
+
+  .site-footer__inner > small {
     padding-top: 28px;
   }
 }
