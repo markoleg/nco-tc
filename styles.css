@@ -512,83 +512,7 @@ p {
   width: 100%;
 }
 
-/* ---------- 01 Mission ---------- */
-
-.mission__grid {
-  display: grid;
-  gap: 24px;
-}
-
-.mission__copy {
-  color: var(--ink-muted);
-  font-size: 16px;
-  line-height: 1.65;
-}
-
-.mission__copy p + p {
-  margin-top: 16px;
-}
-
-/* ---------- 02 Values ---------- */
-
-.values {
-  position: relative;
-  overflow: hidden;
-}
-
-.values::before {
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 6px;
-  background: var(--gold);
-  content: "";
-}
-
-.values__title {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0 0.35em;
-}
-
-.values__title span:nth-child(2) {
-  color: var(--gold);
-}
-
-.values__grid {
-  display: grid;
-  margin-top: 40px;
-  border-top: 1px solid var(--line-dark);
-}
-
-.value {
-  padding: 28px 0 30px;
-  border-bottom: 1px solid var(--line-dark);
-}
-
-.value__idx {
-  display: block;
-  color: var(--gold);
-  font-family: var(--head);
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-}
-
-.value h3 {
-  margin-top: 18px;
-  font-size: 1.75rem;
-  letter-spacing: 0.02em;
-}
-
-.value p {
-  max-width: 340px;
-  margin-top: 12px;
-  color: rgba(244, 244, 242, 0.72);
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-/* ---------- 03 Who ---------- */
+/* ---------- 01 Who ---------- */
 
 .criteria {
   display: grid;
@@ -639,7 +563,7 @@ p {
   font-weight: 500;
 }
 
-/* ---------- 04 About ---------- */
+/* ---------- 02 About ---------- */
 
 .about__grid {
   display: grid;
@@ -711,7 +635,7 @@ p {
   line-height: 1.6;
 }
 
-/* ---------- 05 Vacancies ---------- */
+/* ---------- 03 Vacancies ---------- */
 
 .section-head {
   display: grid;
@@ -1242,7 +1166,6 @@ body.has-mobile-cta {
     font-size: clamp(2.6rem, 5.4vw, 4rem);
   }
 
-  .values__grid,
   .criteria {
     grid-template-columns: repeat(3, 1fr);
     border-top: 1px solid var(--line-dark);
@@ -1252,7 +1175,6 @@ body.has-mobile-cta {
     border-top-color: var(--line-light);
   }
 
-  .value,
   .criterion {
     padding: 32px 28px 36px 0;
     border-bottom: 0;
@@ -1263,7 +1185,6 @@ body.has-mobile-cta {
     border-right-color: var(--line-light);
   }
 
-  .value + .value,
   .criterion + .criterion {
     padding-left: 28px;
   }
@@ -1479,35 +1400,15 @@ body.has-mobile-cta {
     font-size: clamp(2.8rem, 3.9vw, 3.9rem);
   }
 
-  .mission__grid,
   .about__grid {
     grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.55fr);
     gap: 64px;
     align-items: start;
   }
 
-  .mission__copy,
   .about__copy {
     padding-top: 14px;
     font-size: 17px;
-  }
-
-  .values__title {
-    font-size: clamp(3.2rem, 5.6vw, 5.4rem);
-  }
-
-  .values__grid {
-    margin-top: 56px;
-  }
-
-  .value {
-    padding-top: 40px;
-    padding-bottom: 48px;
-  }
-
-  .value h3 {
-    margin-top: 48px;
-    font-size: 2.1rem;
   }
 
   .criteria {
@@ -1677,9 +1578,6 @@ body.has-mobile-cta {
     font-size: 19px;
   }
 
-  .values__title {
-    font-size: 6rem;
-  }
 }
 
 /* ---------- Reduced motion ---------- */
