@@ -3,7 +3,7 @@
    Вкажіть ідентифікатор потоку даних GA4 (формат G-XXXXXXXXXX).
    Поки поле порожнє — жоден скрипт аналітики не завантажується.
    ------------------------------------------------------------ */
-const GA_MEASUREMENT_ID = "";
+const GA_MEASUREMENT_ID = "G-J80XZWM0K4";
 
 window.dataLayer = window.dataLayer || [];
 function gtag() {
