@@ -49,7 +49,7 @@ https://developers.facebook.com/tools/debug/ (кнопка «Scrape Again» ск
 | Подія           | Коли                                   | Параметри                                          |
 | --------------- | -------------------------------------- | -------------------------------------------------- |
 | `cta_click`     | клік на будь-яку кнопку до анкети      | `cta_location` (hero / header / vacancy / final …), `cta_label`, `link_url`, `utm_*` |
-| `contact_click` | клік на телефон або e-mail             | `contact_type` (phone / email), `utm_*`             |
+| `contact_click` | клік на телефон, e-mail або месенджер  | `contact_type` (phone / email / whatsapp / signal), `contact_location` (contacts / footer), `link_url`, `utm_*` |
 
 У GA4 позначте `cta_click` як **конверсію** (Admin → Events → Mark as conversion) — тоді у звітах буде видно
 воронку «відвідування → джерело → натискання “Стати інструктором”».

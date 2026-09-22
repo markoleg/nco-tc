@@ -52,10 +52,16 @@ document.querySelectorAll("[data-cta]").forEach((link) => {
   });
 });
 
-/* Кліки на телефон / e-mail */
+/* Кліки на телефон / e-mail / месенджери */
 document.querySelectorAll("[data-contact]").forEach((link) => {
   link.addEventListener("click", () => {
-    track("contact_click", { contact_type: link.dataset.contact });
+    const location = link.closest("[data-contact-location]")?.dataset.contactLocation;
+
+    track("contact_click", {
+      contact_type: link.dataset.contact,
+      contact_location: location,
+      link_url: link.href,
+    });
   });
 });
 
